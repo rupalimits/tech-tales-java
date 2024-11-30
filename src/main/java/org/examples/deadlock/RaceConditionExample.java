@@ -25,7 +25,7 @@ public class RaceConditionExample {
         System.out.println("Final Counter Value: " + counter);
     }
 
-    public synchronized void increment() {
+    public void increment() {
         for (int i = 0; i < 10000; i++) {
             counter++;  // This is not thread-safe, leading to a race condition
         }
